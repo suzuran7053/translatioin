@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* COMMON */
+
+a,
+a:hover,
+li {
+    color: inherit !important;
+    text-decoration: none!important;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+img {
+    filter: contrast(110%);
+}
+
+
+/* FONT */
+
+.font,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.grey {
+    color: gray;
+}
+
+.img_box {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%;
+}
+
+.img_box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post:hover {
+    background-color: #dfdfebf3;
+    transition: 0.5s;
+}
+
+
+/*navbar*/
+
+#nav-sm,
+#mySidenav {
+    display: none;
+}
+
+.nav-link {
+    padding: .2rem 1rem !important;
+}
+
+.ham {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 248, 248, 0.9);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    overflow: auto;
+}
+
+@media(max-width:992px) {
+    #nav-sm,
+    #mySidenav {
+        display: block;
+    }
+}
+
+
+/*sidebar*/
+
+#sidebar {
+    background: url("../images/S__14221314.jpg") center/cover no-repeat;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#main {
+    padding: 0px 10px;
+    left: 16.6%;
+}
+
+@media(max-width:992px) {
+    #sidebar {
+        display: none !important;
+    }
+    #main {
+        left: 0;
+    }
+}
+
+#webdev{
+    border-radius: 10px;
+    background-color: rgba(233, 230, 230, 0.816);
+}
+
+#webdev:hover {
+    background-color: rgb(187, 186, 186, 0.816);
+}
+
+
+/*Search*/
+
+#search_submit {
+    background: none;
+    border: none;
+    color: rgb(181, 180, 181);
+}
+
+#search_submit:hover {
+    color: black;
+}
+
+
+/*footer*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
